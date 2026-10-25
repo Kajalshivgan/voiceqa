@@ -1,0 +1,11 @@
+__pycache__/
+*.pyc
+.venv/
+venv/
+.env
+voiceqa/output/
+.pytest_cache/
+*.egg-info/
+.DS_Store
+voiceqa/wake/
+*.wav

@@ -1,0 +1,86 @@
+[
+  {
+    "id": "scn_000",
+    "command": "Set temperature to 22 degrees",
+    "category": "happy_path",
+    "expected_intent": "set_temperature",
+    "expected_ui_state": "For 'voice-controlled climate control': climate screen shows 22\u00b0C"
+  },
+  {
+    "id": "scn_001",
+    "command": "Turn the fan up",
+    "category": "happy_path",
+    "expected_intent": "increase_fan_speed",
+    "expected_ui_state": "For 'voice-controlled climate control': fan speed indicator increases by one step"
+  },
+  {
+    "id": "scn_002",
+    "command": "Turn on the air conditioning",
+    "category": "happy_path",
+    "expected_intent": "ac_on",
+    "expected_ui_state": "For 'voice-controlled climate control': AC icon shown as active"
+  },
+  {
+    "id": "scn_003",
+    "command": "Make it warmer",
+    "category": "paraphrased",
+    "expected_intent": "increase_temperature",
+    "expected_ui_state": "For 'voice-controlled climate control': temperature increases by 1-2\u00b0C"
+  },
+  {
+    "id": "scn_004",
+    "command": "22 please",
+    "category": "paraphrased",
+    "expected_intent": "set_temperature",
+    "expected_ui_state": "For 'voice-controlled climate control': climate screen shows 22\u00b0C"
+  },
+  {
+    "id": "scn_005",
+    "command": "A bit cooler in here",
+    "category": "paraphrased",
+    "expected_intent": "decrease_temperature",
+    "expected_ui_state": "For 'voice-controlled climate control': temperature decreases by 1-2\u00b0C"
+  },
+  {
+    "id": "scn_006",
+    "command": "Set the- uh, set temperature to 22",
+    "category": "edge_case",
+    "expected_intent": "set_temperature",
+    "expected_ui_state": "For 'voice-controlled climate control': climate screen shows 22\u00b0C"
+  },
+  {
+    "id": "scn_007",
+    "command": "[road noise] set temperature to twenty two degrees",
+    "category": "edge_case",
+    "expected_intent": "set_temperature",
+    "expected_ui_state": "For 'voice-controlled climate control': climate screen shows 22\u00b0C"
+  },
+  {
+    "id": "scn_008",
+    "command": "Mach die Temperatur cooler please",
+    "category": "edge_case",
+    "expected_intent": "decrease_temperature",
+    "expected_ui_state": "For 'voice-controlled climate control': temperature decreases by 1-2\u00b0C"
+  },
+  {
+    "id": "scn_009",
+    "command": "Set temperature to 222 degrees",
+    "category": "adversarial",
+    "expected_intent": "clarification_needed",
+    "expected_ui_state": "For 'voice-controlled climate control': system asks for a valid temperature range"
+  },
+  {
+    "id": "scn_010",
+    "command": "Set temperature to negative 5",
+    "category": "adversarial",
+    "expected_intent": "clarification_needed",
+    "expected_ui_state": "For 'voice-controlled climate control': system rejects out-of-range value"
+  },
+  {
+    "id": "scn_011",
+    "command": "Set the volume to 22 degrees",
+    "category": "adversarial",
+    "expected_intent": "clarification_needed",
+    "expected_ui_state": "For 'voice-controlled climate control': system asks user to clarify intent"
+  }
+]

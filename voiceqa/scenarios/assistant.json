@@ -1,0 +1,26 @@
+[
+  {
+    "id": "asst_001",
+    "command": "Open weather app",
+    "wake_word": "Hey BMW",
+    "category": "happy_path",
+    "expected_intent": "set_alarm",
+    "expected_ui_state": "Clock app shows a new alarm set for 7:00 AM"
+  },
+  {
+    "id": "asst_002",
+    "command": "What is the time",
+    "wake_word": "Hey Google",
+    "category": "happy_path",
+    "expected_intent": "get_time",
+    "expected_ui_state": "Assistant shows and speaks the current time"
+  },
+  {
+    "id": "asst_003",
+    "command": "What is the temperature",
+    "wake_word": "Hey Google",
+    "category": "happy_path",
+    "expected_intent": "get_temperature",
+    "expected_ui_state": "Assistant shows and speaks the current temperature"
+  }
+]

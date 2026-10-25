@@ -1,0 +1,30 @@
+[
+  {
+    "id": "scn_000",
+    "command": "Hey Google, open Contacts",
+    "category": "happy_path",
+    "expected_intent": "open_app",
+    "expected_ui_state": "com.google.android.contacts foreground"
+  },
+  {
+    "id": "scn_001",
+    "command": "Hey Google, show me my contacts",
+    "category": "paraphrased",
+    "expected_intent": "open_app",
+    "expected_ui_state": "com.google.android.contacts foreground"
+  },
+  {
+    "id": "scn_002",
+    "command": "[background chatter] Hey Google, uh, open my contacts list",
+    "category": "edge_case",
+    "expected_intent": "open_app",
+    "expected_ui_state": "com.google.android.contacts foreground"
+  },
+  {
+    "id": "scn_003",
+    "command": "Hey Google, open context",
+    "category": "adversarial",
+    "expected_intent": "no_match",
+    "expected_ui_state": "com.google.android.contacts NOT foreground"
+  }
+]

@@ -1,0 +1,12 @@
+# Optional, heavier dependencies for real (non-mock) audio synthesis,
+# variation, and transcription. Each has a graceful fallback in code if not
+# installed — see voiceqa/synthesis/tts.py, voiceqa/synthesis/variation.py,
+# and voiceqa/capture/stt.py.
+#
+# Note: pydub depends on the stdlib `audioop` module, which was removed in
+# Python 3.13+. On newer interpreters, variation.py automatically falls back
+# to a pure-stdlib WAV mixer/resampler instead.
+TTS>=0.22.0
+pydub>=0.25.1
+openai-whisper>=20231117
+pyttsx3>=2.90
